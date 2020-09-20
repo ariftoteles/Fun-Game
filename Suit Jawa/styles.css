@@ -1,0 +1,114 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Suwit Jawa */
+* {
+    background-color: brown;
+}
+
+.container {
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+}
+
+table {
+    margin: 40px auto;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin: 0 30px;
+    border-radius: 50%;
+}
+
+.info {
+    width: 200px;
+    height: 80px;
+    border: 5px solid salmon;
+    position: relative;
+    margin: auto;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 1;
+    text-align: center;
+    line-height: 70px;
+    color: #4ECCA3;
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    text-shadow: 2px 0 #232931;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 6rem;
+    color: #4ECCA3;
+}
+
+.gajah, .orang, .semut {
+    transition: .3s;
+    position: relative;
+    top:0;
+    cursor: pointer;
+    background-color: #232931;
+    opacity: 80%;
+    transform: rotate(180deg);
+}
+
+.gajah:hover, .semut:hover, .orang:hover, .active {
+    opacity: 100%;
+    box-shadow: 0 0 10px 5px limegreen;
+}
+
+.gajah:active, .semut:active, .orang:active {
+    top: 2px;
+}
